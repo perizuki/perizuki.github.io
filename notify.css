@@ -1,0 +1,73 @@
+.notification-wrapper {
+	position: fixed;
+    font-family: 'Niramit', sans-serif;
+    padding: 10px;
+	font-size: 15px;
+	color: #ffffff;
+	background: #44A4FC;
+	border-left: 10px solid #187FE7;
+	width: 200px;
+}
+
+.top-right {
+	right: 35px;
+    top: -100px;
+    animation-direction: normal, reverse;
+    -webkit-animation-direction: normal, reverse;
+    -webkit-animation-name: "top-right";
+    -webkit-animation-duration: 1s;
+    animation-name: "top-right";
+    animation-duration: 1s;
+}
+
+@-webkit-keyframes top-right {
+    0% {top: -100px;}
+    50% {top: -20px;}
+    100% {top: -100px;}
+}
+
+@keyframes top-right {
+    0% {top: -100px;}
+    50% {top: -20px;}
+    100% {top: -100px;}
+}
+.fade-out {
+    -webkit-animation-name: "fade-out-animation";
+    -webkit-animation-duration: 0.1s;
+    animation-name: "fade-out-animation";
+    animation-duration: 0.1s;
+}
+
+@-webkit-keyframes fade-out-animation {
+    0% {opacity: 1;}
+    50% {opacity: 0.5;}
+    100% {opacity: 0;}
+}
+
+@keyframes fade-out-animation {
+    0% {opacity: 1;}
+    50% {opacity: 0.5;}
+    100% {opacity: 0;}
+}
+
+.success {
+	background: #68CD86;
+    border-left-color: #42A85F;
+}
+
+.title-panel {
+    display: inline-block;
+    width: 80%;
+}
+
+.text-panel {
+    display: inline-block;
+    width: 20%;
+    position: relative;
+    right: -25px;
+    top: -15px;
+}
+
+.row-class {
+    display: block;
+}
